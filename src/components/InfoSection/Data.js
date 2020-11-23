@@ -1,4 +1,3 @@
-
 //property for About page
 export const homeObjOne = {
     id: "about",
@@ -49,7 +48,7 @@ export const homeObjThree = {
     description: "Get acess to our exclusive app that allows you to send unlimited transaction without getting charged any fees",
     buttonLabel: "Start Now",
     imgStart: false,
-    img: require("../../images/Saving.svg"),
+    img: require("../../images/Icon3.svg"),
     alt: "Paper",
     dark: false,
     primary: false,
