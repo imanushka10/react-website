@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button } from "../ButtonElements"
-import Hero from "../../images/Hero.svg"
+// import Hero from "../../images/Hero.svg"
+
+
 
 import {
     InfoContainer,
@@ -14,12 +16,11 @@ import {
     BtnWrap,
     Column2,
     ImgWrap,
-    Img
-
+    Img,
 } from "./InfoElements"
 
-const InfoSection = ({ id, lightBg, lightText, lightTextDesc, topLine, headLine,
-    description, buttonLabel, imgStart, img, alt, dark, dark2, primary, darkText }) => {
+const InfoSection = ({ img, alt, id, lightBg, lightText, lightTextDesc, topLine, headLine,
+    description, buttonLabel, imgStart, dark, dark2, primary, darkText }) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -39,7 +40,8 @@ const InfoSection = ({ id, lightBg, lightText, lightTextDesc, topLine, headLine,
                                         offset={-80}
                                         primary={primary ? 1 : 0}
                                         dark={dark ? 1 : 0}
-                                        dark2={dark2 ? 1 : 0}>
+                                        dark2={dark2 ? 1 : 0}
+                                    >
                                         {buttonLabel}
                                     </Button>
                                 </BtnWrap>
@@ -47,7 +49,7 @@ const InfoSection = ({ id, lightBg, lightText, lightTextDesc, topLine, headLine,
                         </Column1>
                         <Column2>
                             <ImgWrap >
-                                <Img src={Hero} alt={alt}></Img>
+                                <Img src={img} alt={alt} />
                             </ImgWrap>
 
                         </Column2>
